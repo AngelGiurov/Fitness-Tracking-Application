@@ -32,6 +32,8 @@ public class FlywayConfig {
     @Value("${spring.datasource.driver-class-name}")
     private String driverClassName;
 
+    private static final String SCHEMA_NAME = "user_fitness_tracking_application";
+
 
     public DataSource buildDataSource() {
         return DataSourceBuilder.create()
@@ -47,7 +49,7 @@ public class FlywayConfig {
         Flyway.configure()
                 .dataSource(buildDataSource())
                 .locations(DEFAULT_SCHEMA_LOCATION)
-                .schemas("user_fitness_tracking_application")
+                .schemas(SCHEMA_NAME)
                 .load()
                 .migrate();
     }
