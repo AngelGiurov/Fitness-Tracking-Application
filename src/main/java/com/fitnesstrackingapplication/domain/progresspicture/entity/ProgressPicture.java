@@ -1,7 +1,7 @@
 package com.fitnesstrackingapplication.domain.progresspicture.entity;
 
 import com.fitnesstrackingapplication.domain.AbstractEntity;
-import com.fitnesstrackingapplication.domain.workout.Workout;
+import com.fitnesstrackingapplication.domain.workout.entity.Workout;
 import jakarta.persistence.*;
 import lombok.*;
 

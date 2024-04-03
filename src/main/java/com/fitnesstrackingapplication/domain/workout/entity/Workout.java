@@ -1,4 +1,4 @@
-package com.fitnesstrackingapplication.domain.workout;
+package com.fitnesstrackingapplication.domain.workout.entity;
 
 import com.fitnesstrackingapplication.domain.AbstractEntity;
 import com.fitnesstrackingapplication.domain.exercise.entity.Exercise;

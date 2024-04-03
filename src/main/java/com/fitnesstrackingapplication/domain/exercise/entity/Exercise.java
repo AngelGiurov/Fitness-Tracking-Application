@@ -19,11 +19,11 @@ public class Exercise extends AbstractEntity {
     private String name;
 
     @Column(nullable = false)
-    private String description;
+    private String instructions;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Set<MuscleGroup> muscleGroup;
+    private Set<MuscleGroup> muscle;
 
     @Column(nullable = true)
     private Equipment equipment;
